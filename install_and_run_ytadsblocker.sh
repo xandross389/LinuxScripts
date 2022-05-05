@@ -9,4 +9,8 @@ chmod +x /usr/src/ytadsblocker.sh
 /usr/src/ytadsblocker.sh -a stop
 /usr/src/ytadsblocker.sh -a uninstall
 /usr/src/ytadsblocker.sh -a install
-/usr/src/ytadsblocker.sh -a start &
+#/usr/src/ytadsblocker.sh -a start &
+systemctl start ytadsblocker
+systemctl enable ytadsblocker
+systemctl status ytadsblocker
+
