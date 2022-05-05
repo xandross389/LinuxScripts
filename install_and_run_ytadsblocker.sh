@@ -4,7 +4,6 @@
 # inside docker container> ./install_and_run_ytadsblocker.sh
 # asumming you have mapped script to /usr/src from outside docker container run: sudo sudo docker exec -it pihole /usr/src/install_and_run_ytadsblocker.sh
 apt update -qq && apt install -qq systemctl -y
-#cd /usr/src/
 curl https://raw.githubusercontent.com/deividgdt/ytadsblocker/master/ytadsblocker.sh -o /usr/src/ytadsblocker.sh
 chmod +x /usr/src/ytadsblocker.sh
 /usr/src/ytadsblocker.sh -a stop
